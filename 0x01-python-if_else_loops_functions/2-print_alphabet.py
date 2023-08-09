@@ -1,3 +1,6 @@
 #!/usr/bin/python3
+output = ""
 for char in range(97, 123):
-    print(chr(char), end='')
+    output += chr(char)
+
+print("{}".format(output), end='')
