@@ -1,3 +1,2 @@
 #!/bin/bash
-[ -z "$PYFILE" ] && echo "PYFILE environment variable not set" || python3 "$PYFILE"
-
+python3 ${PYFILE:?PYFILE environment variable not set}
