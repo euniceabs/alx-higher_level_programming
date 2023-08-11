@@ -10,7 +10,7 @@ if __name__ == "__main__":
     Total_add = add(a, b)
     Total_sub = sub(a, b)
     Total_div = div(a, b)
-    
+
     print("{} + {} = {}".format(a, b, Total_add))
     print("{} - {} = {}".format(a, b, Total_sub))
     print("{} * {} = {}".format(a, b, Total_mul))
