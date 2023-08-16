@@ -11,9 +11,10 @@ def roman_to_int(roman_string):
     while i >= 0:
         value = roman_numerals[roman_string[i]]
         if i > 0 and value > roman_numerals[roman_string[i - 1]]:
-            result -= value
+            result += value - roman_numerals[roman_string[i - 1]]
+            i -= 1
         else:
             result += value
         i -= 1
 
-    return result
+        return result
