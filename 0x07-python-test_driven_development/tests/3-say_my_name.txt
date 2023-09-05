@@ -1,0 +1,66 @@
+Tests for say_my_name in 3-say_my_name.py
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+# Valid input with both first name and last name
+>>> say_my_name("Hamza", "Sufian")
+My name is Hamza Sufian
+
+# Invalid input: last_name is not a string
+>>> say_my_name("Holberton", 4)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Invalid input: last_name is None
+>>> say_my_name("Hamza", None)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Invalid input: last_name is a dictionary
+>>> say_my_name("Hamza", {})
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Invalid input: last_name is not a string
+>>> say_my_name("Hamza", 8)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Invalid input: first_name is not a string
+>>> say_my_name([], "Sufian")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Invalid input: first_name is not a string
+>>> say_my_name(8, "Sufian")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Invalid input: first_name is a matrix
+>>> say_my_name([[1, 2, 3], [4, 5, 6], [7, 8, 9]], "Sufian")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Invalid input: last_name is not a string
+>>> say_my_name("Holberton", 69)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Invalid input: last_name is not a string
+>>> say_my_name("Holberton", 1)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+# Invalid input: first_name is None
+>>> say_my_name(None, "Sufian")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Invalid input: first_name is not a string
+>>> say_my_name([1, 2, 3], "Sufian")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Invalid input: missing required positional argument: 'first_name'
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
