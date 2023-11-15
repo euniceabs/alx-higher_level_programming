@@ -5,14 +5,14 @@ class Square extends PrevSquare {
   charPrint (c) {
     const myChar = c === undefined ? 'X' : c;
     for (let e = 0; e < this.height; e++) {
-      let var = '';
+      let myVar = '';
       let b = 0;
       while (b < this.width) {
-        var += myChar;
+        myVar += myChar;
         b++;
       }
 
-      console.log(var);
+      console.log(myVar);
     }
   }
 }
